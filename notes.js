@@ -100,3 +100,23 @@ const Ppokemon = (nombre, tipo) => ({ nombre, tipo })
 let favorito = "queso"
 
 console.log(`my favorite is ${favorito}`)
+
+// Destructuring array
+
+let comida = ['spaghetti', 'sushi', 'paella', 'arroç']
+
+let [uno, dos, tres, cuatro, cinco] = comida // This is the array destructured
+
+console.log(tres)
+
+// Destructuring object
+
+let objeto = {
+  grupo1: "Pink Floyd",
+  grupo2: "Joan Macarra",
+  grupo3: "Bad Bunny"
+}
+
+let { grupo1: rock, grupo2: punk, grupo3: trap_latino } = musica
+
+console.log(rock, punk, trap_latino)
